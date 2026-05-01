@@ -1,0 +1,87 @@
+:root{
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --font-family: 'Inter', sans-serif;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0px;
+}
+.top-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    border: #ddd solid 1px;
+    box-shadow: 0 1px 20px rgba(0,0,0,0.2);
+}
+.logo{
+    font-size: 28px;
+    font-weight: 600;
+}
+.top-nav-center{
+    display: flex;
+    font-size: 20px;
+    gap: 60px;   
+}
+.btn-nav{
+    background: linear-gradient(to right, #6a00c9, #4a71e9);
+    color: white;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-container-text{
+    padding: 200px 100px 100px 150px;
+
+}
+.main-container-text-first-line{
+    font-size: 70px;
+    margin: 16px 0;
+}
+.main-container-text-second-line{
+    font-size: 80px;
+    margin: 10px 0;
+}
+.main-container-text-third-line{
+    font-size: 25px;
+    margin: 10px 0;
+    color: #808080;
+    word-spacing: 8px;
+}
+.gradiente-negrilla{
+    background: linear-gradient(to right, #6a00c9, #4a71e9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+.negrilla{
+    font-weight: 900;
+}
+
+.main-img{
+    border-radius: 20px;
+    margin: 20px 100px 0px 0px;
+}
+.main-container-btn{
+    background: #4a71e9;
+    color: white;
+    padding: 22px 34px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    width: fit-content;
+}
+.text-behind-container{
+    text-align: center;
+    font-size: 43px;
+    color: black;
+    line-height: 0.7;
+}
