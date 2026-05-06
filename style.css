@@ -93,6 +93,144 @@ body {
     color: black;
     line-height: 0.7;
 }
+.bg-part_3{
+    background-color: hsl(240, 23%, 97%);
+    border-bottom: #e7daed solid 2px;
+    border-top: #e7daed solid 2px;
+    padding: 10px;
+}
+
+.approach-section{
+    padding: 90px 24px 110px;
+}
+
+.approach-heading{
+    line-height: 1.05;
+    margin-bottom: 84px;
+}
+
+.approach-heading div{
+    margin: 0;
+}
+
+.approach-heading div:first-child{
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+}
+
+.approach-heading div:last-child{
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: -0.04em;
+}
+
+.approach-grid{
+    max-width: 1310px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+}
+
+.approach-card{
+    background: rgba(255, 255, 255, 0.88);
+    border: 1px solid #eadff2;
+    min-height: 215px;
+    display: flex;
+    align-items: flex-start;
+    gap: 28px;
+    padding: 36px 34px;
+    box-sizing: border-box;
+}
+
+.approach-icon{
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 10px 24px rgba(32, 41, 58, 0.12);
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.approach-card-dark .approach-icon{
+    background: linear-gradient(145deg, #32343f, #1d1f28);
+}
+
+.approach-card-blue .approach-icon{
+    background: linear-gradient(145deg, #61c2fb, #5c8df7);
+}
+
+.approach-card-pink .approach-icon{
+    background: linear-gradient(145deg, #ff84ac, #ff4b92);
+}
+
+.approach-card-green .approach-icon{
+    background: linear-gradient(145deg, #4ee3bf, #25cf95);
+}
+
+.approach-card-hidden{
+    display: none;
+}
+
+.approach-title{
+    margin: 4px 0 12px;
+    font-size: 23px;
+    line-height: 1.2;
+    font-weight: 900;
+    color: #2a3445;
+}
+
+.approach-content p{
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #67758a;
+    max-width: 515px;
+}
+
+@media (max-width: 1100px){
+    .approach-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .approach-card{
+        min-height: auto;
+    }
+}
+
+@media (max-width: 700px){
+    .approach-section{
+        padding: 64px 16px 80px;
+    }
+
+    .approach-heading{
+        margin-bottom: 52px;
+    }
+
+    .approach-heading div:first-child,
+    .approach-heading div:last-child{
+        font-size: 34px;
+    }
+
+    .approach-card{
+        flex-direction: column;
+        gap: 18px;
+        padding: 28px 22px;
+    }
+
+    .approach-title{
+        font-size: 21px;
+    }
+
+    .approach-content p{
+        font-size: 16px;
+    }
 
 
 
