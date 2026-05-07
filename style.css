@@ -6,8 +6,21 @@
     --font-family: 'Inter', sans-serif;
     --brand-primary: #57007b;
     --text-heading: #1a202c;
+    --text-body: #4a5568;
     --text-body-2: #718096;
-    --color-border-bottom: #e7daed;
+    --text-card: #2d3748;
+    --color-border-card: #e7daed;
+    --color-border-bottom: #cbd5e0;
+    
+    --text-ux-1: #28272e;
+    --text-ux-2: #60c6f2;
+    --text-ux-3: #ff7da9;
+    --text-ux-4: #51e8d3;
+    --text-ux-5: #fbdd88;
+    --text-ux-6: #c8487e;
+    
+    --bg-section: #f7f7fa;
+    --text-font-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 body {
@@ -74,6 +87,11 @@ body {
     font-family: var(--font-family);
 }
 
+.text-emphasis {
+    font-weight: 900;
+    font-family: var(--font-family);
+}
+
 .main-img{
     border-radius: 20px;
     margin: 20px 100px 0px 0px;
@@ -93,145 +111,6 @@ body {
     color: black;
     line-height: 0.7;
 }
-.bg-part_3{
-    background-color: hsl(240, 23%, 97%);
-    border-bottom: #e7daed solid 2px;
-    border-top: #e7daed solid 2px;
-    padding: 10px;
-}
-
-.approach-section{
-    padding: 90px 24px 110px;
-}
-
-.approach-heading{
-    line-height: 1.05;
-    margin-bottom: 84px;
-}
-
-.approach-heading div{
-    margin: 0;
-}
-
-.approach-heading div:first-child{
-    font-size: 48px;
-    font-weight: 400;
-    letter-spacing: -0.03em;
-}
-
-.approach-heading div:last-child{
-    font-size: 48px;
-    font-weight: 900;
-    letter-spacing: -0.04em;
-}
-
-.approach-grid{
-    max-width: 1310px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 28px;
-}
-
-.approach-card{
-    background: rgba(255, 255, 255, 0.88);
-    border: 1px solid #eadff2;
-    min-height: 215px;
-    display: flex;
-    align-items: flex-start;
-    gap: 28px;
-    padding: 36px 34px;
-    box-sizing: border-box;
-}
-
-.approach-icon{
-    width: 64px;
-    height: 64px;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    box-shadow: 0 10px 24px rgba(32, 41, 58, 0.12);
-    color: white;
-    font-size: 28px;
-    font-weight: 700;
-}
-
-.approach-card-dark .approach-icon{
-    background: linear-gradient(145deg, #32343f, #1d1f28);
-}
-
-.approach-card-blue .approach-icon{
-    background: linear-gradient(145deg, #61c2fb, #5c8df7);
-}
-
-.approach-card-pink .approach-icon{
-    background: linear-gradient(145deg, #ff84ac, #ff4b92);
-}
-
-.approach-card-green .approach-icon{
-    background: linear-gradient(145deg, #4ee3bf, #25cf95);
-}
-
-.approach-card-hidden{
-    display: none;
-}
-
-.approach-title{
-    margin: 4px 0 12px;
-    font-size: 23px;
-    line-height: 1.2;
-    font-weight: 900;
-    color: #2a3445;
-}
-
-.approach-content p{
-    margin: 0;
-    font-size: 18px;
-    line-height: 1.6;
-    color: #67758a;
-    max-width: 515px;
-}
-
-@media (max-width: 1100px){
-    .approach-grid{
-        grid-template-columns: 1fr;
-    }
-
-    .approach-card{
-        min-height: auto;
-    }
-}
-
-@media (max-width: 700px){
-    .approach-section{
-        padding: 64px 16px 80px;
-    }
-
-    .approach-heading{
-        margin-bottom: 52px;
-    }
-
-    .approach-heading div:first-child,
-    .approach-heading div:last-child{
-        font-size: 34px;
-    }
-
-    .approach-card{
-        flex-direction: column;
-        gap: 18px;
-        padding: 28px 22px;
-    }
-
-    .approach-title{
-        font-size: 21px;
-    }
-
-    .approach-content p{
-        font-size: 16px;
-    }
-}
 
 .testimonial-section {
     padding: 60px 0px;
@@ -240,7 +119,6 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    border-bottom: 1px solid var(--color-border-bottom);
 }
 
 .testimonial-section h2 {
@@ -344,6 +222,141 @@ body {
     font-size: 25px;
 }
 
+.section-design-development {
+    padding: 60px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--color-border-bottom);
+    background-color: var(--bg-section);
+}
+
+.section-design-development h2 {
+    color: var(--text-heading);
+    text-align: center;
+    font-family: var(--text-font-primary);
+    font-weight: 400;
+    font-size: 35px;
+    max-width: 400px;
+}
+
+.section-design-development p {
+    color: var(--text-body);
+    text-align: center;
+}
+
+.design-development {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background: white;
+    border: 1px solid var(--color-border-card);
+    padding: 50px 30px;
+    box-sizing: border-box;
+}
+
+.card i {
+    width: 30px;
+    height: 30px;
+    border-radius: 12px;
+    padding: 12px;
+    object-fit: contain;
+    font-size: 30px;
+}
+
+.card i.las.la-check {
+    color: #b4d60c;
+    background: linear-gradient(to top right, #f8a66b, #fee360);
+}
+
+.card i.las.la-rocket {
+    color: #ffffff;
+    background-color: #28272e;
+}
+
+.card i.las.la-lock {
+    color: #d9ab2e;
+    background: linear-gradient(to top right, #74137b, #e4597f);
+}
+
+.card i.las.la-heartbeat {
+    color: #ffffff;
+    background: linear-gradient(to top right, #ff409a, #ff91ad);
+}
+
+.card i.las.la-code {
+    color: #6f81fe;
+    background: linear-gradient(to top right, #52a3f4, #64d2f2);
+}
+
+.card i.las.la-shield-alt {
+    color: #2fab96;
+    background: linear-gradient(to top right, #2be79f, #62e8ea);
+}
+
+.card h3 {
+    color: var(--text-heading);
+    font-family: var(--text-font-primary);
+    font-weight: 600;
+    font-size: 18px;
+    max-width: 400px;
+    margin-top: 0px;
+}
+
+.card p {
+    margin: 0;
+    line-height: 1.5;
+    font-family: var(--text-font-primary);
+    color: var(--text-body);
+    text-align: justify;
+    font-size: 14px;
+    max-width: 430px;
+}
+
+.text-UX-1 {
+    color: var(--text-ux-1);
+    font-weight: normal;
+}
+
+.text-UX-2 {
+    color: var(--text-ux-2);
+    font-weight: normal;
+}
+
+.text-UX-3 {
+    color: var(--text-ux-3);
+    font-weight: normal;
+}
+
+.text-UX-4 {
+    color: var(--text-ux-4);
+    font-weight: normal;
+}
+
+.text-UX-5 {
+    color: var(--text-ux-5);
+    font-weight: normal;
+}
+
+.text-UX-6 {
+    color: var(--text-ux-6);
+    font-weight: normal;
+}
+
+.style-bold {
+    font-weight: 900;
+    font-family: var(--text-font-primary);
+}
+
 .featured-section {
     padding: 60px 0px;
     display: flex;
@@ -351,7 +364,6 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    border-bottom: 1px solid var(--color-border-bottom);
 }
 
 .featured-section h2 {
